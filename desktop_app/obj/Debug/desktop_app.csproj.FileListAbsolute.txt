@@ -1,0 +1,10 @@
+C:\Users\maxfc\Desktop\EZPC_RPA\desktop_app\bin\Debug\desktop_app.exe.config
+C:\Users\maxfc\Desktop\EZPC_RPA\desktop_app\bin\Debug\desktop_app.exe
+C:\Users\maxfc\Desktop\EZPC_RPA\desktop_app\bin\Debug\desktop_app.pdb
+C:\Users\maxfc\Desktop\EZPC_RPA\desktop_app\obj\Debug\desktop_app.csproj.AssemblyReference.cache
+C:\Users\maxfc\Desktop\EZPC_RPA\desktop_app\obj\Debug\desktop_app.Form1.resources
+C:\Users\maxfc\Desktop\EZPC_RPA\desktop_app\obj\Debug\desktop_app.Properties.Resources.resources
+C:\Users\maxfc\Desktop\EZPC_RPA\desktop_app\obj\Debug\desktop_app.csproj.GenerateResource.cache
+C:\Users\maxfc\Desktop\EZPC_RPA\desktop_app\obj\Debug\desktop_app.csproj.CoreCompileInputs.cache
+C:\Users\maxfc\Desktop\EZPC_RPA\desktop_app\obj\Debug\desktop_app.exe
+C:\Users\maxfc\Desktop\EZPC_RPA\desktop_app\obj\Debug\desktop_app.pdb
