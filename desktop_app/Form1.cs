@@ -8,11 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Microsoft.Extensions.Configuration;
 
 namespace desktop_app
 {
     public partial class Form1 : Form
     {
+        IConfiguration config =
+                new ConfigurationBuilder()
+                    .AddEnvironmentVariables()
+                    .Build();
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -34,9 +39,16 @@ namespace desktop_app
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btn_create_meet_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/C "+ Environment.GetEnvironmentVariable("UIROBOT_DIR") + "\\UiRobot.exe -file \""+ Environment.GetEnvironmentVariable("PROCESS_CREATE_MEET_DIR") +"\"";
+            Console.WriteLine(startInfo.Arguments);
+            process.StartInfo = startInfo;
+            process.Start();
         }
     }
 }

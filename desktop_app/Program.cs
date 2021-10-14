@@ -21,7 +21,7 @@ namespace desktop_app
             var root = Directory.GetCurrentDirectory();
             var dotenv = Path.Combine(root, ".env");
             DotEnv.Load(dotenv);
-            var config =
+            IConfiguration config =
                 new ConfigurationBuilder()
                     .AddEnvironmentVariables()
                     .Build();
