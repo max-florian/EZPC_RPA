@@ -32,6 +32,7 @@ namespace desktop_app
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            this.flowLayoutPanel1.AllowDrop = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -51,6 +52,20 @@ namespace desktop_app
             process.Start();
         }
 
-        
+        private void flowLayoutPanel1_DragOver(object sender, DragEventArgs e)
+        {
+            base.OnDragOver(e);
+            // is another dragable
+            if (e.Data.GetData(typeof(PictureBox)) != null)
+            {
+                FlowLayoutPanel p = (FlowLayoutPanel)(sender as PictureBox).Parent;
+                //Current Position             
+                int myIndex = p.Controls.GetChildIndex((sender as PictureBox));
+
+                //Dragged to control to location of next picturebox
+                PictureBox q = (PictureBox)e.Data.GetData(typeof(PictureBox));
+                p.Controls.SetChildIndex(q, myIndex);
+            }
+        }
     }
 }
