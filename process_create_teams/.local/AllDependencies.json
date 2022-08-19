@@ -1575,7 +1575,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win7-x86": {
+    ".NETFramework,Version=v4.6.1/win10-x64": {
       "ClosedXML/0.87.1": {
         "type": "package",
         "dependencies": {
@@ -5025,9 +5025,9 @@
     "restore": {
       "projectUniqueName": "process_create_teams",
       "projectName": "process_create_teams",
-      "projectPath": "C:\\Users\\maxfc\\Desktop\\EZPC_RPA\\process_create_teams\\.local",
+      "projectPath": "C:\\Users\\maxfc\\Documents\\Proyectos\\EZPC_RPA\\process_create_teams\\.local",
       "packagesPath": "C:\\Users\\maxfc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maxfc\\Desktop\\EZPC_RPA\\process_create_teams\\.local"
+      "outputPath": "C:\\Users\\maxfc\\Documents\\Proyectos\\EZPC_RPA\\process_create_teams\\.local"
     },
     "frameworks": {
       "net461": {
@@ -5053,7 +5053,12 @@
             "version": "[21.4.4, 21.4.4]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\maxfc\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\maxfc\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+      }
+    },
+    "runtimes": {
+      "win10-x64": {
+        "#import": []
       }
     }
   }
